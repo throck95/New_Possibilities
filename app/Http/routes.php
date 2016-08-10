@@ -1,19 +1,15 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register all of the routes for an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the controller to call when that URI is requested.
-|
-*/
-
+/**
+ * Home Page
+ */
 Route::get('/',function() {
     return view('pages.home');
 })->name('home');
+
+/**
+ * Root Page Routing
+ */
 Route::get('/counseling',function() {
     return view('pages.counseling');
 })->name('counseling');
@@ -30,6 +26,9 @@ Route::get('/contact-us',function() {
     return view('pages.contact');
 })->name('contact');
 
+/**
+ * Counseling Pages Routing
+ */
 Route::get('/counseling/marriage-and-relationships',function() {
     return view('pages.counseling.relationships');
 })->name('relationships');
@@ -40,6 +39,9 @@ Route::get('/counseling/substance-use',function() {
     return view('pages.counseling.substance');
 })->name('substance');
 
+/**
+ * Coaching Pages Routing
+ */
 Route::get('/coaching/life-phase-transitions',function() {
     return view('pages.counseling.lifePhaseTransitions');
 })->name('lifePhaseTransitions');
