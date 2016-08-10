@@ -1,20 +1,64 @@
-#navBar {
-    background: #4da6ff;
-    border-radius: 4px;
-    margin: 3px;
-}
-
-.navButton {
-    margin: 5px 5px 0;
-    padding: 5px;
-    border: 1px solid black;
+#navButtonsList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0000cc;
+    font-weight: bold;
     border-radius: 5px;
-    background: inherit;
 }
 
-.navButton:hover {
-    background: #5bc0de;
+#navButtonsList li {
+    float: left;
 }
+
+#navButtonsList li a, .navButton {
+    display: inline-block;
+    color: #FF9900;
+    background-color: #0000cc;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#navButtonsList li a:hover, .navContent:hover .navButton {
+    background-color: #FF9900;
+    color: #0000cc;
+}
+
+li.navLi {
+    display: inline-block;
+}
+
+.navContent {
+    display: none;
+    position: absolute;
+    background-color: #0000cc;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,.2);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.navLi:hover .navContent {
+    display: block;
+}
+
+.active {
+    pointer-events: none;
+    cursor: default;
+    font-weight: normal;
+}
+
+.fixed {
+    position: fixed;
+    width: 56.25%;
+}
+
+
+
+
 
 .contactUsHeader {
     float: right;

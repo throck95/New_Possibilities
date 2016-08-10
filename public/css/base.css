@@ -1,15 +1,16 @@
 html,body {
     width: 75%;
+    min-width: 800px;
     margin: 0 auto auto;
 }
 
 html {
-    background-color: #d3d3d3;
-    background-image: linear-gradient(0deg,rgba(255,255,255,.07) 50%, transparent 50%),
-    linear-gradient(0deg, rgba(255,255,255,.13) 50%, transparent 50%),
-    linear-gradient(0deg, transparent 50%, rgba(255,255,255,.17) 50%),
-    linear-gradient(0deg, transparent 50%, rgba(255,255,255,.19) 50%);
-    background-size: 13px, 29px, 37px, 53px;
+    background-color: #e0e0eb;
+    background-image: linear-gradient(0deg,rgba(153,204,255,.07) 50%, transparent 50%),
+    linear-gradient(15deg, rgba(153,204,255,.13) 50%, transparent 50%),
+    linear-gradient(0deg, transparent 50%, rgba(153,204,255,.17) 50%),
+    linear-gradient(15deg, transparent 50%, rgba(153,204,255,.19) 50%);
+    background-size: 11px, 25px, 31px, 43px;
 }
 
 .rootContainer {
@@ -20,4 +21,8 @@ html {
     border-bottom-right-radius: 6px;
     margin: 0;
     padding: 0;
+}
+
+.contactUsHeader {
+    margin: 30px;
 }
