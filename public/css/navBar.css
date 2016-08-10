@@ -1,0 +1,21 @@
+#navBar {
+    background: #4da6ff;
+    border-radius: 4px;
+    margin: 3px;
+}
+
+.navButton {
+    margin: 5px 5px 0;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: inherit;
+}
+
+.navButton:hover {
+    background: #5bc0de;
+}
+
+.contactUsHeader {
+    float: right;
+}
