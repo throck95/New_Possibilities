@@ -17,6 +17,9 @@
     <body>
         <div class="rootContainer">
             @include('includes.navBar_include')
+            <div class="contentSlider">
+                @yield('slickSlider')
+            </div>
             <div class="body">
                 @yield('bodyContent')
             </div>
@@ -24,7 +27,8 @@
         </div>
         <footer>
             @yield('footer')
-            <p id="copyright"></p>
+            <span id="copyright"></span>
+            <a style="float:right" target="_blank" href="{{URL::route('attributions')}}">Attributions</a>
         </footer>
     </body>
 </html>
