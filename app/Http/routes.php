@@ -48,3 +48,7 @@ Route::get('/coaching/life-phase-transitions',function() {
 Route::get('/coaching/professional-growth',function() {
     return view('pages.counseling.profGrowth');
 })->name('profGrowth');
+
+Route::get('/attributions',function() {
+    return view('pages.attributions');
+})->name('attributions');
