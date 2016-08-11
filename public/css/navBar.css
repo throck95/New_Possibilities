@@ -1,3 +1,7 @@
+#navBar {
+    z-index: 100;
+}
+
 #navButtonsList {
     list-style-type: none;
     margin: 0;
